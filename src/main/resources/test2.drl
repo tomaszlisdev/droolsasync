@@ -1,0 +1,12 @@
+package com.demo;
+
+import com.example.demo.Model;
+
+rule "My first rule"
+sal ience 10
+    when
+        $model: Model();
+        Model(name == "a")
+    then
+        $model.setName("b");
+end
